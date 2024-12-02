@@ -1,0 +1,171 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(chromakopia.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    user-select: none;
+}
+#todoContainer{
+    background-color: hsl(0, 0%, 75%, 0.75);
+    border: 5px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    height: 1000px;
+    box-shadow: 15px 15px 25px hsla(0, 0%, 0%, 0.9);
+}
+#todoContainer h1{
+    font-size: 3em;
+}
+#todoContainer *{
+    margin: 5px;
+}
+#totalTasks{
+    font-size: 2em;
+}
+#taskContainer{
+    background-color: hsl(0, 0%, 85%);
+    border: 2px solid hsl(0, 0%, 75%);
+    padding: 50px;
+    height: 70%;
+    width: 60%;
+    box-shadow: 10px 10px 25px black;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.task{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 60%);
+    border-radius: 5px;
+}
+.task:hover{
+    background-color: hsl(0, 0%, 70%);
+}
+.completeBtn{
+    background-color: hsl(113, 100%, 70%);
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.completeBtn:active{
+    background-color: hsl(113, 81%, 55%);
+}
+.deleteBtn{
+    background-color: hsl(0, 100%, 70%);
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.deleteBtn:active{
+    background-color: hsl(0, 64%, 60%);
+}
+.taskDesc{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.taskDesc p{
+    font-size: 2em;
+    white-space: normal;
+    margin: 0;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+.taskDesc label{
+    color: hsl(0, 0%, 95%);
+}
+#textboxContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 95%;
+    height: 10%;
+    margin: 15px;
+    border: 5px solid hsl(0, 0%, 35%);
+    border-radius: 5px;
+}
+#textboxContainer *{
+    margin: 5px;
+}
+#textbox{
+    background-color: hsl(0, 0%, 90%);
+    width: 75%;
+    height: 50%;
+    padding: 10px;
+    border: 2px solid hsl(0, 0%, 25%);
+    border-radius: 15px;
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+}
+#addTaskBtn{
+    background-color: hsl(0, 0%, 60%);
+    border: 3px solid hsl(0, 0%, 25%);
+    border-radius: 10px;
+    height: 50%;
+    width: 50px;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#addTaskBtn:active{
+    background-color: hsl(0, 0%, 80%);
+}
+#calendarBtn{
+    background-color: hsl(0, 0%, 60%);
+    border: 3px solid hsl(0, 0%, 25%);
+    border-radius: 10px;
+    height: 50px;
+    width: 180px;
+    font-size: 2em;
+    cursor: pointer;
+}
+#calendarBtn:active{
+    background-color: hsl(0, 0%, 80%);
+}
+#noTasksText{
+    background-color: hsl(0, 0%, 70%);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 25px black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+}
+.completed {
+    background-color: hsl(113, 64%, 60%);
+    color: hsl(0, 0%, 50%);
+}
+.completed:hover{
+    background-color: hsl(113, 76%, 67%);
+}

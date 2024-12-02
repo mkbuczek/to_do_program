@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="todoContainer">
+            <h1>Tasks</h1>
+            <label id="totalTasks">0</label>
+
+            <div id="taskContainer">
+
+                <label id="noTasksText">No tasks scheduled</label>
+            </div>
+        
+            <div id="textboxContainer">
+                <button id="addTaskBtn" onclick="addTask()">+</button>
+                <input type="textbox" id="textbox" placeholder="Input a task..." autocomplete="off">
+                <input type="date" id="calendarBtn">
+            </div>
+
+        </div>
+    </header> 
+
+    <script src="index.js"></script>
+
+</body>
+</html>
